@@ -16,7 +16,7 @@ const Filter = ({ setSearchQuery, selectedFilters, setFilters }) => {
       newTabs.push(tabName);
       return newTabs;
     });
-  };
+  };  
 
   // Filter tabları
   const filters = [

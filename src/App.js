@@ -25,7 +25,7 @@ function App() {
       "all",
       JSON.stringify(data.hits.map(({ recipe }) => recipe)),
     );
-  }
+  } //neticeni elde elemek ucundu
 
   useEffect(() => {
     fetchAPI().catch((error) => console.error(error));
@@ -56,7 +56,7 @@ function App() {
         <div className="flex gap-[10px] flex-wrap justify-center">
           {results.map(
             ({ recipe }, index) =>
-              index < 6 && <RecipeItem key={recipe.url} recipe={recipe} />,
+              index < 10 && <RecipeItem key={recipe.url} recipe={recipe} />,
           )}
         </div>
         <div className="w-full flex justify-center mt-4">

@@ -38,8 +38,8 @@ const RecipeItem = ({ recipe }) => {
           </p>
           <button
             onClick={(e) => {
-              e.stopPropagation();
-              saveRecipe(recipe);
+              e.stopPropagation(); //linki bos ver
+              saveRecipe(recipe);  //
             }}
             className="z-40"
           >
